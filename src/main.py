@@ -45,7 +45,7 @@ def record_microphone(chunk = 1024):
     stream.close()
     p.terminate()
 
-def speech_recognition(output):
+def speech_recognition():
     while not messages.empty():
         frames = recordings.get()
         rec.AcceptWaveform('b'.join(frames))
